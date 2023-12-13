@@ -4,15 +4,6 @@
 		v-model="$store.state.app.sideNav"
 		:permanent="$vuetify.display.lgAndUp"
 	>
-		<v-col class="d-flex justify-center">
-			<v-img
-				:src="`/${$store.getters.appName}/foundation-logo.png`"
-				alt="foundation-logo"
-				:height="$vuetify.display.mdAndDown ? 120 : 90"
-				:width="$vuetify.display.mdAndDown ? 120 : 90"
-			/>
-		</v-col>
-
 		<v-divider/>
 
 		<v-list class="pa-0">

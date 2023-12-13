@@ -1,7 +1,7 @@
 <?php
 
 // RESULT FOR SPECIFIC EVENT
-// SAMPLE URL: localhost/sportsfest-litmusda/app/results/event.php?oration
+// SAMPLE URL: localhost/class-presentation/app/results/event.php?oration
 
 // apply authentication
 const LOGIN_PAGE_PATH = '../crud/';

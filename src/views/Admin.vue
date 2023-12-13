@@ -159,7 +159,8 @@
 					:style="{'color': `${team.color} !important` }"
 					:class="`${$vuetify.display.mdAndDown ? 'text-caption' : ''}${allSubmitted && team.title !== '' ? ' bg-yellow-lighten-3' : ''}`"
 				>
-					{{ team.name }}
+                    <p class="ma-0 text-subtitle-1 text-uppercase font-weight-bold" style="line-height: 1.2">{{ team.name }}</p>
+                    <p class="mt-1 mb-0 text-disabled" style="line-height: 1"><small>{{ team.color }}</small></p>
 				</td>
                 <td
                     v-for="(technical, technicalKey, technicalIndex) in technicals"
@@ -395,7 +396,7 @@ export default {
 			handler(to, from) {
 				if (this.timer)
 					clearTimeout(this.timer);
-					
+
 				this.event      = null;
 				this.teams      = [];
 				this.judges     = [];
