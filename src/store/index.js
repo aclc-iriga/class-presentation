@@ -14,14 +14,14 @@ export default createStore({
         app: {
             backendDir: 'app',
             sideNav: false,
-            title: 'Sportsfest-LitMusDa 2023',
+            title: 'Class Performance 2023',
             org: 'ACLC College Iriga'
         },
         window: {
             height: 0
         },
         rating: {
-            min: 75,
+            min: 50,
             max: 100
         },
         deduction: {
@@ -39,7 +39,7 @@ export default createStore({
         // get app url
         appURL(state) {
             const location = window.location;
-            if (location.hostname === 'localhost' && location.port === '5176')
+            if (location.hostname === 'localhost' && location.port === '5190')
                 return `http://localhost${import.meta.env.BASE_URL}${state.app.backendDir}`;
             else
                 return `${location.protocol}//${location.hostname}${import.meta.env.BASE_URL}${state.app.backendDir}`;
